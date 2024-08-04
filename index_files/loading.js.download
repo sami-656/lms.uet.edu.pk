@@ -1,0 +1,40 @@
+/*
+ * jsGrid v1.2.0 (http://js-grid.com)
+ * (c) 2015 Artem Tabalin
+ * Licensed under MIT (https://github.com/tabalinas/jsgrid/blob/master/LICENSE)
+ */
+
+        function openModal()
+         {
+          document.getElementById('modal').style.display = 'block';
+          document.getElementById('fade').style.display = 'block';
+          document.getElementById('loading_msg').style.display = 'block';
+        }
+
+        function closeModal()
+         {
+          document.getElementById('modal').style.display = 'none';
+          document.getElementById('fade').style.display = 'none';
+          document.getElementById('loading_msg').style.display = 'none';
+        }
+         display_error = function(message){
+              
+                                        document.getElementById("error").style.backgroundColor = 'A61300';
+                                        document.getElementById("error").style.border = '1px solid A61300';
+                                        document.getElementById("error").innerHTML = "";
+                                        document.getElementById("error").innerHTML = message;
+                                        document.getElementById("error").style.display = "block";
+                                        $("#error").delay(5000).hide(100);
+            }
+            display_success_msg = function(message){
+                                      document.getElementById("success").innerHTML = "";
+                                      document.getElementById("success").style.backgroundColor = 'green';
+                                      document.getElementById("success").style.border = '1px solid green';
+                                      document.getElementById("success").innerHTML = message;
+                                      document.getElementById("success").style.display = "block";
+                                      $("#success").delay(5000).hide(100);
+            }
+            
+
+
+        
